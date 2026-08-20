@@ -1,0 +1,28 @@
+{
+  "eqn_config": {
+    "_comment": "Phase 3 100D arithmetic-average basket European call with equicorrelation.",
+    "eqn_name": "ArithmeticBasket100D",
+    "total_time": 1.0,
+    "dim": 100,
+    "num_time_interval": 25,
+    "x_init": 100.0,
+    "rate": 0.05,
+    "sigma": 0.2,
+    "strike": 100.0,
+    "rho": 0.0,
+    "ground_truth": 4.8814205199808915,
+    "sample_dtype": "float64"
+  },
+  "net_config": {
+    "y_init_range": [1.8814205199808915, 7.8814205199808915],
+    "num_hiddens": [110, 110],
+    "lr_values": [0.005, 0.002, 0.001],
+    "lr_boundaries": [2000, 4000],
+    "num_iterations": 6000,
+    "batch_size": 128,
+    "valid_size": 512,
+    "logging_frequency": 25,
+    "dtype": "float64",
+    "verbose": false
+  }
+}
