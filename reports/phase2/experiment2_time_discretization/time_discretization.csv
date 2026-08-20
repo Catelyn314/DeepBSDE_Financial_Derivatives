@@ -1,0 +1,6 @@
+num_time_interval,seed,status,note,name,analytic_price,final_y0,final_loss,absolute_error,relative_error_pct,elapsed_time_s
+25,3101,completed,,100D Geometric Basket,2.9718541960134814,2.97126,3.0916,0.0005941960134814295,0.01999411728470726,163.0
+50,3101,completed,,100D Geometric Basket,2.9718541960134814,2.98079,3.30108,0.008935803986518387,0.30068110334972337,324.0
+100,3101,completed,,100D Geometric Basket,2.9718541960134814,2.99122,3.16214,0.01936580398651877,0.6516404476537422,607.0
+200,3101,not_completed,Stopped because nonshared time-layer model made this run too slow in the local session.,100D Geometric Basket,2.9718541960134814,,,,,
+400,3101,not_completed,Stopped because nonshared time-layer model made this run too slow in the local session.,100D Geometric Basket,2.9718541960134814,,,,,

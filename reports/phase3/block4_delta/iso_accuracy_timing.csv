@@ -1,0 +1,4 @@
+method,precision_metric,precision_value,paths_or_runs,elapsed_seconds,note
+Deep BSDE,RMS per-asset SEM across 3 seeds,0.0005611284590326733,3,438.2585220336914,Z0 is a training by-product; elapsed is total 3-seed training time.
+MC+CV CRN bump-and-revalue,RMS per-asset standard error,6.789545517515565e-05,1000,0.0022215829999998604,One 100D CRN run computes all 2x100 bumped prices.
+MC+CV CRN high-precision reference,RMS per-asset standard error,2.1456985780562076e-06,1000000,1.9782317919999999,Diagnostic 1e6-path reference; baseline plus 2x100 bumped prices.

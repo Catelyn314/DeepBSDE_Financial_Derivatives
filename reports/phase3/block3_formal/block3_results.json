@@ -1,0 +1,276 @@
+{
+  "status": "formal Block 3 complete",
+  "settings": {
+    "dims": [
+      10,
+      50,
+      100
+    ],
+    "rho": 0.0,
+    "targets_pct": [
+      0.5,
+      0.2
+    ],
+    "bsde_seed": 5101,
+    "mc_scan_seed": 5201,
+    "mc_path_cap": 20000000,
+    "time_metric": "first hit"
+  },
+  "ground_truths": [
+    {
+      "dim": 10,
+      "price": 5.647729504768613,
+      "ci95_low": 5.645833156586997,
+      "ci95_high": 5.649625852950228,
+      "relative_ci_half_width_pct": 0.033577177873240556,
+      "paths": 1000000,
+      "elapsed_seconds": 0.0851605000000002,
+      "seed": 5101,
+      "source": "formal Block 3 MC+CV",
+      "precision_reached": true
+    },
+    {
+      "dim": 50,
+      "price": 4.922606450067318,
+      "ci95_low": 4.921502976610273,
+      "ci95_high": 4.923709923524362,
+      "relative_ci_half_width_pct": 0.02241644682014476,
+      "paths": 1000000,
+      "elapsed_seconds": 0.357882375,
+      "seed": 5101,
+      "source": "formal Block 3 MC+CV",
+      "precision_reached": true
+    },
+    {
+      "dim": 100,
+      "price": 4.8814205199808915,
+      "ci95_low": 4.8807039771192064,
+      "ci95_high": 4.882137062842577,
+      "relative_ci_half_width_pct": 0.014678982455041232,
+      "paths": 1000000,
+      "elapsed_seconds": 0.7431002919999999,
+      "seed": 5101,
+      "source": "reused Block 1",
+      "precision_reached": true
+    }
+  ],
+  "time_to_accuracy": [
+    {
+      "dim": 10,
+      "method": "Deep BSDE",
+      "target_relative_error_pct": 0.5,
+      "reached_target": true,
+      "wall_clock_seconds": 19.0,
+      "step_or_paths": 575,
+      "actual_relative_error_pct": 0.35076919343712,
+      "hit_path_cap": false,
+      "source": "formal Block 3"
+    },
+    {
+      "dim": 10,
+      "method": "Deep BSDE",
+      "target_relative_error_pct": 0.2,
+      "reached_target": true,
+      "wall_clock_seconds": 21.0,
+      "step_or_paths": 775,
+      "actual_relative_error_pct": 0.06692078233246206,
+      "hit_path_cap": false,
+      "source": "formal Block 3"
+    },
+    {
+      "dim": 10,
+      "method": "MC+CV",
+      "target_relative_error_pct": 0.5,
+      "reached_target": true,
+      "wall_clock_seconds": 0.00023775000000014757,
+      "step_or_paths": 1000,
+      "actual_relative_error_pct": 0.19561571798283883,
+      "hit_path_cap": false,
+      "source": "formal Block 3 independent scan"
+    },
+    {
+      "dim": 10,
+      "method": "MC+CV",
+      "target_relative_error_pct": 0.2,
+      "reached_target": true,
+      "wall_clock_seconds": 0.00023775000000014757,
+      "step_or_paths": 1000,
+      "actual_relative_error_pct": 0.19561571798283883,
+      "hit_path_cap": false,
+      "source": "formal Block 3 independent scan"
+    },
+    {
+      "dim": 50,
+      "method": "Deep BSDE",
+      "target_relative_error_pct": 0.5,
+      "reached_target": true,
+      "wall_clock_seconds": 19.0,
+      "step_or_paths": 450,
+      "actual_relative_error_pct": 0.34013586303356597,
+      "hit_path_cap": false,
+      "source": "formal Block 3"
+    },
+    {
+      "dim": 50,
+      "method": "Deep BSDE",
+      "target_relative_error_pct": 0.2,
+      "reached_target": true,
+      "wall_clock_seconds": 19.0,
+      "step_or_paths": 475,
+      "actual_relative_error_pct": 0.15425872471642785,
+      "hit_path_cap": false,
+      "source": "formal Block 3"
+    },
+    {
+      "dim": 50,
+      "method": "MC+CV",
+      "target_relative_error_pct": 0.5,
+      "reached_target": true,
+      "wall_clock_seconds": 0.0004822500000001284,
+      "step_or_paths": 1000,
+      "actual_relative_error_pct": 0.13068539721711225,
+      "hit_path_cap": false,
+      "source": "formal Block 3 independent scan"
+    },
+    {
+      "dim": 50,
+      "method": "MC+CV",
+      "target_relative_error_pct": 0.2,
+      "reached_target": true,
+      "wall_clock_seconds": 0.0004822500000001284,
+      "step_or_paths": 1000,
+      "actual_relative_error_pct": 0.13068539721711225,
+      "hit_path_cap": false,
+      "source": "formal Block 3 independent scan"
+    },
+    {
+      "dim": 100,
+      "method": "Deep BSDE",
+      "target_relative_error_pct": 0.5,
+      "reached_target": true,
+      "wall_clock_seconds": 21.0,
+      "step_or_paths": 475,
+      "actual_relative_error_pct": 0.36115470787543147,
+      "hit_path_cap": false,
+      "source": "reused Block 2"
+    },
+    {
+      "dim": 100,
+      "method": "Deep BSDE",
+      "target_relative_error_pct": 0.2,
+      "reached_target": true,
+      "wall_clock_seconds": 22.0,
+      "step_or_paths": 525,
+      "actual_relative_error_pct": 0.07824525675413406,
+      "hit_path_cap": false,
+      "source": "reused Block 2"
+    },
+    {
+      "dim": 100,
+      "method": "MC+CV",
+      "target_relative_error_pct": 0.5,
+      "reached_target": true,
+      "wall_clock_seconds": 0.000858834000000197,
+      "step_or_paths": 1000,
+      "actual_relative_error_pct": 0.04868230878643996,
+      "hit_path_cap": false,
+      "source": "formal Block 3 independent scan"
+    },
+    {
+      "dim": 100,
+      "method": "MC+CV",
+      "target_relative_error_pct": 0.2,
+      "reached_target": true,
+      "wall_clock_seconds": 0.000858834000000197,
+      "step_or_paths": 1000,
+      "actual_relative_error_pct": 0.04868230878643996,
+      "hit_path_cap": false,
+      "source": "formal Block 3 independent scan"
+    }
+  ],
+  "bsde_stability_diagnostic": [
+    {
+      "dim": 10,
+      "target_relative_error_pct": 0.5,
+      "settling_step": 1925,
+      "settling_wall_clock_seconds": 35.0,
+      "first_hit_step": 575,
+      "first_hit_wall_clock_seconds": 19.0
+    },
+    {
+      "dim": 10,
+      "target_relative_error_pct": 0.2,
+      "settling_step": 5825,
+      "settling_wall_clock_seconds": 85.0,
+      "first_hit_step": 775,
+      "first_hit_wall_clock_seconds": 21.0
+    },
+    {
+      "dim": 50,
+      "target_relative_error_pct": 0.5,
+      "settling_step": 3975,
+      "settling_wall_clock_seconds": 75.0,
+      "first_hit_step": 450,
+      "first_hit_wall_clock_seconds": 19.0
+    },
+    {
+      "dim": 50,
+      "target_relative_error_pct": 0.2,
+      "settling_step": null,
+      "settling_wall_clock_seconds": null,
+      "first_hit_step": 475,
+      "first_hit_wall_clock_seconds": 19.0
+    },
+    {
+      "dim": 100,
+      "target_relative_error_pct": 0.5,
+      "settling_step": 3600,
+      "settling_wall_clock_seconds": 88.0,
+      "first_hit_step": 475,
+      "first_hit_wall_clock_seconds": 21.0
+    },
+    {
+      "dim": 100,
+      "target_relative_error_pct": 0.2,
+      "settling_step": 5575,
+      "settling_wall_clock_seconds": 134.0,
+      "first_hit_step": 525,
+      "first_hit_wall_clock_seconds": 22.0
+    }
+  ],
+  "mc_checkpoints": [
+    {
+      "dim": 10,
+      "paths": 1000,
+      "estimate": 5.658777351389094,
+      "ground_truth": 5.647729504768613,
+      "relative_error_pct": 0.19561571798283883,
+      "ci95_half_width": 0.05816441041705409,
+      "relative_ci_half_width_pct": 1.0278617942580144,
+      "elapsed_seconds": 0.00023775000000014757,
+      "seed": 5201
+    },
+    {
+      "dim": 50,
+      "paths": 1000,
+      "estimate": 4.929039577860023,
+      "ground_truth": 4.922606450067318,
+      "relative_error_pct": 0.13068539721711225,
+      "ci95_half_width": 0.03553828626683705,
+      "relative_ci_half_width_pct": 0.7209981925579555,
+      "elapsed_seconds": 0.0004822500000001284,
+      "seed": 5201
+    },
+    {
+      "dim": 100,
+      "paths": 1000,
+      "estimate": 4.883796908191593,
+      "ground_truth": 4.8814205199808915,
+      "relative_error_pct": 0.04868230878643996,
+      "ci95_half_width": 0.022262227316213735,
+      "relative_ci_half_width_pct": 0.45583851529274894,
+      "elapsed_seconds": 0.000858834000000197,
+      "seed": 5201
+    }
+  ]
+}

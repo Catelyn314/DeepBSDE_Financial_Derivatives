@@ -1,0 +1,83 @@
+{
+  "parameters": {
+    "spot": 100.0,
+    "strike": 100.0,
+    "rate": 0.05,
+    "sigma": 0.2,
+    "maturity": 1.0,
+    "dim": 100
+  },
+  "mc_seed": 5101,
+  "path_schedule": [
+    1000000,
+    5000000,
+    10000000,
+    20000000
+  ],
+  "precision_threshold_pct": 0.05,
+  "results": [
+    {
+      "rho": 0.0,
+      "paths": 1000000,
+      "seed": 5101,
+      "y0_mc_cv": 4.8814205199808915,
+      "ci95_low": 4.8807039771192064,
+      "ci95_high": 4.882137062842577,
+      "ci95_half_width": 0.0007165428616847776,
+      "relative_ci_half_width_pct": 0.014678982455041232,
+      "precision_threshold_pct": 0.05,
+      "precision_reached": true,
+      "hit_path_cap": false,
+      "elapsed_seconds": 0.7431002919999999,
+      "raw_mc_price": 4.882076035516362,
+      "raw_mc_standard_error": 0.0020087197339953844,
+      "cv_standard_error": 0.0003655830926963151,
+      "beta": 1.0649580579244688,
+      "control_variance": 3.4398917977784427,
+      "variance_reduction_factor": 30.19023456782616,
+      "analytic_geometric_control_price": 2.9718541960134814
+    },
+    {
+      "rho": 0.3,
+      "paths": 1000000,
+      "seed": 5101,
+      "y0_mc_cv": 7.181017117673521,
+      "ci95_low": 7.179987843620536,
+      "ci95_high": 7.182046391726507,
+      "ci95_half_width": 0.0010292740529857008,
+      "relative_ci_half_width_pct": 0.014333262769315904,
+      "precision_threshold_pct": 0.05,
+      "precision_reached": true,
+      "hit_path_cap": false,
+      "elapsed_seconds": 0.8605804589999999,
+      "raw_mc_price": 7.186727734984157,
+      "raw_mc_standard_error": 0.008458836473739066,
+      "cv_standard_error": 0.0005251398229518882,
+      "beta": 1.062551551909666,
+      "control_variance": 63.13121802760601,
+      "variance_reduction_factor": 259.4605603568819,
+      "analytic_geometric_control_price": 6.256151368613395
+    },
+    {
+      "rho": 0.5,
+      "paths": 1000000,
+      "seed": 5101,
+      "y0_mc_cv": 8.303880453607585,
+      "ci95_low": 8.303137749731977,
+      "ci95_high": 8.304623157483192,
+      "ci95_half_width": 0.0007427038756080325,
+      "relative_ci_half_width_pct": 0.008944057898682394,
+      "precision_threshold_pct": 0.05,
+      "precision_reached": true,
+      "hit_path_cap": false,
+      "elapsed_seconds": 0.8650724580000002,
+      "raw_mc_price": 8.310887582583213,
+      "raw_mc_standard_error": 0.010591317838469524,
+      "cv_standard_error": 0.00037893054877960843,
+      "beta": 1.0380482363018964,
+      "control_variance": 103.97014928985206,
+      "variance_reduction_factor": 781.2333320871844,
+      "analytic_geometric_control_price": 7.662221862130679
+    }
+  ]
+}

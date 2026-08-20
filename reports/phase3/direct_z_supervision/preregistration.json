@@ -1,0 +1,42 @@
+{
+  "development_audit": {
+    "paths": 512,
+    "seed": 6002
+  },
+  "final_gate": {
+    "paths": 512,
+    "seed": 6001,
+    "use_once_after_candidate_lock": true
+  },
+  "lambda_sweep": [
+    0.1,
+    1.0,
+    10.0,
+    100.0
+  ],
+  "lambda_zero_role": "compatibility canary only",
+  "locked_before_sweep": true,
+  "random_five": {
+    "count": 5,
+    "key": "(seed, global_step)",
+    "seed": 7101,
+    "without_replacement": true
+  },
+  "selection_rule": [
+    "exclude candidate if any seed has Y0 relative error >= 0.2%",
+    "minimize median development all-time Delta RMSE across seeds",
+    "within 0.25 percentage points prefer smaller lambda_z",
+    "remaining tie: lower development replication MSE"
+  ],
+  "source_plan_sha256": "f2ed8f23edd313911a4d365b3673adbb84a6999153795d48bca5204e620fe68b",
+  "time_schemes": [
+    "all-time",
+    "random-five",
+    "near-t0"
+  ],
+  "training_seeds": [
+    5101,
+    5201,
+    5202
+  ]
+}

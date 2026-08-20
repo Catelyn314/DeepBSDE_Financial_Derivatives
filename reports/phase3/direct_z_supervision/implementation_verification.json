@@ -1,0 +1,65 @@
+{
+  "all_pass": true,
+  "analytic_delta_vs_central_fd": {
+    "pass": true,
+    "threshold": 1e-07,
+    "value": 2.5016905214059193e-10
+  },
+  "analytic_z_loss": {
+    "pass": true,
+    "threshold": 1.1920928955078125e-07,
+    "value": 0.0
+  },
+  "lambda_zero_one_step_parity": {
+    "loss_abs": 0.0,
+    "pass": true,
+    "post_step_variable_max_abs": 0.0,
+    "terminal_max_abs": 0.0
+  },
+  "path_hash_isolation": {
+    "hashes": {
+      "development_seed6002": "7cb1ddf8077c4ddd6427b26ae5091242a7fa6783f4712f47716cee56a0f7f09d",
+      "final_gate_seed6001": "ca0d56e47516e029e84bd4f0cfebdc83e696dcf3ceb90878ee7f89c770140117",
+      "representative_online_training_draw_by_seed": {
+        "5101": "f48422c1409e2fc579a3c302296e80ccab5128814743807af49d62c14e7748af",
+        "5201": "c89ed9166277870ffe935d077582035a8f83eee5db89960fdc580a3d8bf8384b",
+        "5202": "e56c6404bf61f059512fff678e3e4b1cb2501ff7e7760dbd5a58eab074c04d71"
+      }
+    },
+    "pass": true
+  },
+  "random_five_reproducibility": {
+    "pass": true,
+    "repeat": [
+      5,
+      8,
+      9,
+      14,
+      18
+    ],
+    "step_123": [
+      5,
+      8,
+      9,
+      14,
+      18
+    ],
+    "step_124": [
+      3,
+      11,
+      12,
+      13,
+      14
+    ]
+  },
+  "z_equals_sigma_s_delta": {
+    "pass": true,
+    "threshold": 1e-14,
+    "value": 0.0
+  },
+  "z_extraction_matches_forward": {
+    "forward_max_abs": 0.0,
+    "pass": true,
+    "z_max_abs": 0.0
+  }
+}

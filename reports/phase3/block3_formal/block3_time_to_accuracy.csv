@@ -1,0 +1,13 @@
+dim,method,target_relative_error_pct,reached_target,wall_clock_seconds,step_or_paths,actual_relative_error_pct,hit_path_cap,source
+10,Deep BSDE,0.5,True,19.0,575,0.35076919343712,False,formal Block 3
+10,Deep BSDE,0.2,True,21.0,775,0.06692078233246206,False,formal Block 3
+10,MC+CV,0.5,True,0.00023775000000014757,1000,0.19561571798283883,False,formal Block 3 independent scan
+10,MC+CV,0.2,True,0.00023775000000014757,1000,0.19561571798283883,False,formal Block 3 independent scan
+50,Deep BSDE,0.5,True,19.0,450,0.34013586303356597,False,formal Block 3
+50,Deep BSDE,0.2,True,19.0,475,0.15425872471642785,False,formal Block 3
+50,MC+CV,0.5,True,0.0004822500000001284,1000,0.13068539721711225,False,formal Block 3 independent scan
+50,MC+CV,0.2,True,0.0004822500000001284,1000,0.13068539721711225,False,formal Block 3 independent scan
+100,Deep BSDE,0.5,True,21.0,475,0.36115470787543147,False,reused Block 2
+100,Deep BSDE,0.2,True,22.0,525,0.07824525675413406,False,reused Block 2
+100,MC+CV,0.5,True,0.000858834000000197,1000,0.04868230878643996,False,formal Block 3 independent scan
+100,MC+CV,0.2,True,0.000858834000000197,1000,0.04868230878643996,False,formal Block 3 independent scan

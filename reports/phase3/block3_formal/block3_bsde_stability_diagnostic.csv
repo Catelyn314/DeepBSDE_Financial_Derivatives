@@ -1,0 +1,7 @@
+dim,target_relative_error_pct,settling_step,settling_wall_clock_seconds,first_hit_step,first_hit_wall_clock_seconds
+10,0.5,1925,35.0,575,19.0
+10,0.2,5825,85.0,775,21.0
+50,0.5,3975,75.0,450,19.0
+50,0.2,,,475,19.0
+100,0.5,3600,88.0,475,21.0
+100,0.2,5575,134.0,525,22.0
