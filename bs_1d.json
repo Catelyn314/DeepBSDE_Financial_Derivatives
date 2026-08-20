@@ -1,0 +1,25 @@
+{
+  "eqn_config": {
+    "_comment": "1D Black-Scholes European call option baseline for Deep BSDE validation.",
+    "eqn_name": "BlackScholes1D",
+    "total_time": 1.0,
+    "dim": 1,
+    "num_time_interval": 20,
+    "x_init": 100.0,
+    "rate": 0.05,
+    "sigma": 0.2,
+    "strike": 100.0
+  },
+  "net_config": {
+    "y_init_range": [5.0, 15.0],
+    "num_hiddens": [32, 32],
+    "lr_values": [1e-2, 5e-3, 1e-3],
+    "lr_boundaries": [1000, 2000],
+    "num_iterations": 3000,
+    "batch_size": 128,
+    "valid_size": 2048,
+    "logging_frequency": 100,
+    "dtype": "float64",
+    "verbose": true
+  }
+}
